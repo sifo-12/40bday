@@ -8,8 +8,8 @@
 
   <!-- WhatsApp Rich Preview Tags -->
   <meta property="og:title" content="Moran's 40th Birthday! ✨" />
-  <meta property="og:description" content="Saturday, 12.12 at 7:00 PM | Tap for full details & RSVP" />
-  <meta property="og:image" content="https://sifo-12.github.io/40bday/og-image.jpg" />
+  <meta property="og:description" content="Saturday, 12.12 at 7:00 PM | Tap to RSVP" />
+  <meta property="og:image" content="https://sifo-12.github.io/40bday/og-image.jpg?v=3" />
   <meta property="og:type" content="website" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,10 +36,11 @@
       color: var(--gold-light);
       font-family: 'Montserrat', sans-serif;
       min-height: 100vh;
+      min-height: 100dvh;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 16px;
+      padding: 8px;
       background-image: 
         radial-gradient(circle at 100% 150%, #121214 24%, #1c1910 25%, #1c1910 28%, #121214 29%, #121214 36%, #1c1910 36%, #1c1910 40%, transparent 40%, transparent),
         radial-gradient(circle at 0    150%, #121214 24%, #1c1910 25%, #1c1910 28%, #121214 29%, #121214 36%, #1c1910 36%, #1c1910 40%, transparent 40%, transparent),
@@ -49,130 +50,124 @@
 
     .invite-container {
       background-color: var(--card-black);
-      max-width: 480px;
+      max-width: 440px;
       width: 100%;
-      padding: 12px;
+      padding: 8px;
       border: 2px solid var(--gold-main);
       box-shadow: 0 15px 40px rgba(0, 0, 0, 0.9), 0 0 25px rgba(212, 175, 55, 0.15);
       position: relative;
+      margin: auto;
     }
 
     .inner-border {
       border: 1px solid var(--gold-main);
-      padding: 36px 24px;
+      padding: 20px 16px;
       text-align: center;
       position: relative;
     }
 
     .corner {
       position: absolute;
-      width: 24px;
-      height: 24px;
+      width: 18px;
+      height: 18px;
       border: 2px solid var(--gold-main);
     }
-    .top-right { top: 6px; right: 6px; border-left: none; border-bottom: none; }
-    .top-left { top: 6px; left: 6px; border-right: none; border-bottom: none; }
-    .bottom-right { bottom: 6px; right: 6px; border-left: none; border-top: none; }
-    .bottom-left { bottom: 6px; left: 6px; border-right: none; border-top: none; }
+    .top-right { top: 4px; right: 4px; border-left: none; border-bottom: none; }
+    .top-left { top: 4px; left: 4px; border-right: none; border-bottom: none; }
+    .bottom-right { bottom: 4px; right: 4px; border-left: none; border-top: none; }
+    .bottom-left { bottom: 4px; left: 4px; border-right: none; border-top: none; }
 
-    .forty-script {
-      font-family: 'Great Vibes', cursive;
-      font-size: 4.8rem;
-      line-height: 0.9;
+    .forty-number {
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      font-size: clamp(3.4rem, 11vh, 4.6rem);
+      line-height: 1;
+      letter-spacing: 6px;
       background: linear-gradient(to bottom, var(--gold-light), var(--gold-main), var(--gold-dark));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin-bottom: 4px;
-    }
-
-    .fabulous-sub {
-      font-family: 'Cinzel', serif;
-      letter-spacing: 5px;
-      font-size: 0.95rem;
-      color: var(--gold-main);
-      text-transform: uppercase;
-      margin-bottom: 24px;
+      margin: 4px 0 10px;
     }
 
     .divider {
       height: 1px;
       background: linear-gradient(to right, transparent, var(--gold-main), transparent);
-      margin: 20px auto;
+      margin: 12px auto;
       width: 75%;
     }
 
     .intro-text {
-      font-size: 0.95rem;
+      font-size: clamp(0.8rem, 1.8vh, 0.9rem);
       font-weight: 300;
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
       color: #e0d8c3;
-      line-height: 1.6;
+      line-height: 1.4;
     }
 
     .name-title {
       font-family: 'Great Vibes', cursive;
-      font-size: 4.2rem;
+      font-size: clamp(2.8rem, 10vh, 3.8rem);
       font-weight: 400;
       color: var(--gold-main);
-      margin: 6px 0 14px;
+      margin: 2px 0 8px;
       text-shadow: 0 2px 10px rgba(212, 175, 55, 0.25);
     }
 
     .details-box {
-      margin: 18px 0;
-      font-size: 1.05rem;
-      line-height: 1.8;
+      margin: 10px 0;
+      font-size: clamp(0.85rem, 2vh, 1rem);
+      line-height: 1.5;
     }
 
     .details-box strong {
       font-family: 'Cinzel', serif;
       color: var(--gold-main);
       font-weight: 700;
-      letter-spacing: 1.5px;
+      letter-spacing: 1px;
     }
 
     .location-text {
-      font-size: 0.95rem;
+      font-size: clamp(0.75rem, 1.8vh, 0.85rem);
       color: #cfc5ab;
-      margin-top: 4px;
+      margin-top: 2px;
     }
 
     /* RSVP Section */
     .rsvp-section {
-      margin-top: 26px;
+      margin-top: 14px;
       text-align: left;
     }
 
     .rsvp-title {
       text-align: center;
       font-family: 'Cinzel', serif;
-      font-size: 1.4rem;
+      font-size: clamp(1.1rem, 2.5vh, 1.3rem);
       font-weight: 700;
       color: var(--gold-main);
-      margin-bottom: 18px;
-      letter-spacing: 3px;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
     }
 
     .form-group {
-      margin-bottom: 16px;
+      margin-bottom: 10px;
     }
 
     label {
       display: block;
-      font-size: 0.85rem;
-      margin-bottom: 6px;
+      font-size: clamp(0.7rem, 1.5vh, 0.8rem);
+      margin-bottom: 4px;
       color: var(--gold-light);
       letter-spacing: 0.5px;
     }
 
     input, select {
       width: 100%;
-      padding: 12px;
+      padding: 9px;
       background-color: #1b1b1e;
       border: 1px solid rgba(212, 175, 55, 0.5);
       color: #fff;
       font-family: 'Montserrat', sans-serif;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       border-radius: 2px;
       outline: none;
       transition: border-color 0.3s;
@@ -184,13 +179,13 @@
 
     .submit-btn {
       width: 100%;
-      padding: 14px;
-      margin-top: 12px;
+      padding: 10px;
+      margin-top: 8px;
       background: linear-gradient(45deg, var(--gold-dark), var(--gold-main), var(--gold-light));
       border: none;
       color: #0b0b0c;
       font-family: 'Cinzel', serif;
-      font-size: 1.05rem;
+      font-size: clamp(0.9rem, 2vh, 1rem);
       font-weight: 700;
       cursor: pointer;
       letter-spacing: 2px;
@@ -211,12 +206,12 @@
     }
 
     #status-message {
-      margin-top: 16px;
+      margin-top: 12px;
       text-align: center;
-      font-size: 1rem;
+      font-size: 0.95rem;
       color: var(--gold-light);
       display: none;
-      padding: 14px;
+      padding: 12px;
       border: 1px solid var(--gold-main);
       background: rgba(212, 175, 55, 0.1);
       line-height: 1.5;
@@ -232,8 +227,7 @@
       <div class="corner bottom-right"></div>
       <div class="corner bottom-left"></div>
 
-      <div class="forty-script">Forty</div>
-      <div class="fabulous-sub">AND FABULOUS</div>
+      <div class="forty-number">40</div>
 
       <div class="divider"></div>
 
@@ -242,7 +236,7 @@
 
       <div class="details-box">
         <div><strong>SATURDAY | 12.12 | 7:00 PM</strong></div>
-        <div class="location-text">The exact location will be sent later</div>
+        <div class="location-text">Our Home — DM for address</div>
       </div>
 
       <div class="divider"></div>
@@ -272,7 +266,6 @@
   </div>
 
   <script>
-    // 1. הדבק כאן את כתובת ה-Web App URL שקיבלת מגוגל
     const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwoG-aRs2tXqWeFrXq-e5OBR8XuT-tFnez8yB4aLErlD49n6uE6dY7ZrepxNdTtBSqZcA/exec';
 
     const form = document.getElementById('rsvp-form');
